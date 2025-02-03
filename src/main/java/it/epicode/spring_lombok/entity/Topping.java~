@@ -1,0 +1,4 @@
+package it.epicode.spring_lombok.entity;
+
+public class Topping {
+}
