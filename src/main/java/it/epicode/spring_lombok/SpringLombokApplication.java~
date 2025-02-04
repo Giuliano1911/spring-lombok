@@ -1,0 +1,19 @@
+package it.epicode.spring_lombok;
+
+import it.epicode.spring_lombok.entity.Pizza;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringLombokApplication {
+
+    @Autowired
+    static Pizza pizza1;
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringLombokApplication.class, args);
+        System.out.println(pizza1);
+    }
+
+}
